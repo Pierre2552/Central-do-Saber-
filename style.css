@@ -1,0 +1,125 @@
+/* Fundo preto escuro */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #2D0059; /* Roxo escuro */
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Led roxo no topo (uma faixa brilhante) */
+.led {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(90deg, #6A0DAD, #9B30FF, #6A0DAD);
+  box-shadow: 0 0 20px #9B30FF;
+  z-index: 1000;
+}
+
+/* Silhueta de gato no canto inferior esquerdo */
+.gato {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 120px;
+  height: 150px;
+  background: url('https://i.imgur.com/6k7xaTz.png') no-repeat center/contain;
+  opacity: 0.6;
+  filter: drop-shadow(0 0 5px #9B30FF);
+  z-index: 10;
+}
+
+/* Cabeçalho */
+header {
+  padding: 80px 20px 20px 20px;
+  text-align: center;
+  border-bottom: 2px solid #9B30FF;
+}
+
+/* Botões das matérias */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px;
+}
+
+.menu button {
+  border: none;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+/* Cores das matérias */
+button.matematica {
+  background-color: #1565C0; /* azul */
+}
+button.matematica:hover {
+  background-color: #0D3D73;
+}
+
+button.portugues {
+  background-color: #C62828; /* vermelho */
+}
+button.portugues:hover {
+  background-color: #7B1A1A;
+}
+
+button.ciencias {
+  background-color: #2E7D32; /* verde */
+}
+button.ciencias:hover {
+  background-color: #1B4D20;
+}
+
+button.historia {
+  background-color: #6D4C41; /* marrom */
+}
+button.historia:hover {
+  background-color: #442D24;
+}
+
+button.geografia {
+  background-color: #558B2F; /* verde oliva */
+}
+button.geografia:hover {
+  background-color: #37591B;
+}
+
+button.projeto {
+  background-color: #F06292; /* rosa claro */
+}
+button.projeto:hover {
+  background-color: #A82255;
+}
+
+button.financeira {
+  background-color: #FBC02D; /* amarelo ouro */
+  color: black;
+}
+button.financeira:hover {
+  background-color: #B78F00;
+}
+
+/* Seções com conteúdo escondido inicialmente */
+.secao {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #1E1E1E;
+  padding: 20px;
+  border-radius: 15px;
+  display: none;
+  text-align: left;
+  box-shadow: 0 0 10px #6A0DAD;
+}
